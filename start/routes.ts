@@ -29,3 +29,8 @@ Route.get('/', async ({ view }) => {
 Route.get('/posts', async (ctx) => {
   return new PostsController().index(ctx)
 })
+
+Route.get('/getUsers', async (ctx) => {
+  return new PostsController().getUsers(ctx)
+})
+
